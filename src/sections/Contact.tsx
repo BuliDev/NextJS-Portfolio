@@ -1,7 +1,12 @@
+"use client";
+
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import { useState } from "react";
+import ContactModal from "@/components/ContactModal";
 
 export const ContactSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
@@ -23,10 +28,17 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
+              >
                 <span className="font-semibold">Contact Me</span>
                 <ArrowUpRightIcon className="size-4" />
               </button>
+              <ContactModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+              />
             </div>
           </div>
         </div>

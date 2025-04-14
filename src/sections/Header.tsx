@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export const Header = () => {
   return (
     <header className="flex justify-center items-center w-full fixed top-3 z-10">
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
-        <a className="nav-item" href="#home">
+        <Link className="nav-item" href="/" passHref>
           Home
-        </a>
+        </Link>
         <a className="nav-item" href="#projects">
           Projects
         </a>
