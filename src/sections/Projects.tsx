@@ -19,7 +19,7 @@ const portfolioProjects = [
       { title: "Implemented weather feature using OpenWeatherMap API" },
       { title: "Added calendar and blog post management functionality" },
     ],
-    liveLink: "https://alenburovic/dailyscoop",
+    liveLink: "https://alenburovic.com/dailyscoop/",
     githubLink: "https://github.com/BuliDev/dailyscoop",
     image: dailyScoopImage,
   },
