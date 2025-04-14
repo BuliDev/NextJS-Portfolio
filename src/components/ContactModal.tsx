@@ -85,7 +85,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
           </p>
           <button
             onClick={() => (window.location.href = "/")}
-            className="inline-flex bg-gray-900 text-white py-3 px-6 rounded-xl font-semibold"
+            className="inline-flex border border-white/15 bg-gray-900 text-white py-3 px-6 rounded-xl font-semibold transition-colors duration-300 hover:bg-white hover:text-gray-900 hover:border-gray-900"
           >
             Back to Homepage
           </button>
@@ -144,11 +144,11 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
             type="submit"
             disabled={isSending}
             className={`group relative inline-flex items-center gap-2 border px-6 h-12 rounded-xl overflow-hidden transition-colors duration-300
-              ${
-                isSending
-                  ? "bg-white text-gray-900 border-gray-900 cursor-not-allowed"
-                  : "bg-gray-900 text-white border-gray-900 hover:bg-white hover:text-gray-900"
-              }`}
+    ${
+      isSending
+        ? "bg-white text-gray-900 border-gray-900 cursor-not-allowed"
+        : "border border-white/15 bg-gray-900 text-white hover:bg-white hover:text-gray-900 hover:border-gray-900"
+    }`}
           >
             <span className="relative z-10 font-semibold">
               {isSending ? "Sending..." : "Send Message"}

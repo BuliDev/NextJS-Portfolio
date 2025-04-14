@@ -30,11 +30,12 @@ export const ContactSection = () => {
             <div>
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
+                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 font-semibold transition-all duration-200 hover:shadow-xl hover:scale-[1.02]"
               >
-                <span className="font-semibold">Contact Me</span>
+                <span>Contact Me</span>
                 <ArrowUpRightIcon className="size-4" />
               </button>
+
               <ContactModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}

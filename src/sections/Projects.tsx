@@ -95,17 +95,21 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col md:flex-row md:items-center gap-4 mt-8">
-                    <a href={project.liveLink}>
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 whitespace-nowrap">
-                        <span>Visit Live Site</span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </button>
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      className="group relative bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors duration-300 hover:bg-gray-200"
+                    >
+                      <span>Visit Live Site</span>
+                      <ArrowUpRightIcon className="size-4" />
                     </a>
-                    <a href={project.githubLink}>
-                      <button className="bg-gray-900 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 whitespace-nowrap">
-                        <span>Visit on GitHub</span>
-                        <GitHubIcon className="size-4" />
-                      </button>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      className="bg-gray-900 text-white h-12 w-full md:w-auto px-6 rounded-xl border border-white/15 font-semibold inline-flex items-center justify-center gap-2 whitespace-nowrap transition duration-300 hover:border-white hover:text-white"
+                    >
+                      <span>Visit on GitHub</span>
+                      <GitHubIcon className="size-4" />
                     </a>
                   </div>
                 </div>

@@ -8,10 +8,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
-    >
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -103,7 +100,7 @@ export const HeroSection = () => {
           <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
       </div>
-      <div className="container">
+      <div className="container relative">
         <div className="flex flex-col items-center">
           <Image
             src={memojiImage}
@@ -131,25 +128,20 @@ export const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl overflow-hidden transition-colors duration-300"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-colors duration-300 hover:border-white hover:text-white"
           >
-            <span className="absolute inset-0 bg-emerald-500/10 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out z-0" />
-            <span className="relative z-10 font-semibold text-white transition duration-300 group-hover:text-emerald-300">
-              Explore My Work
-            </span>
-            <ArrowDown className="relative z-10 size-4 text-white transition duration-300 group-hover:text-emerald-300" />
+            <span className="font-semibold">Explore My Work</span>
+            <ArrowDown className="size-4" />
           </a>
           <a
             href="#contact"
-            className="group relative inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl overflow-hidden transition-colors duration-300"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-colors duration-300 hover:bg-gray-200"
           >
-            <span className="absolute inset-0 bg-black/10 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out z-0" />
-            <span className="relative z-10 font-semibold transition-colors duration-300 group-hover:text-gray-900">
-              👋 Let's Connect
-            </span>
+            <span>👋</span>
+            <span className="font-semibold">Let's Connect</span>
           </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
