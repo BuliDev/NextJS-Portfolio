@@ -88,7 +88,7 @@ export const ProjectsSection = () => {
                         key={index}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
                         <span>{result.title}</span>
                       </li>
                     ))}
