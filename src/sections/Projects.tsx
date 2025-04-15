@@ -31,7 +31,7 @@ const portfolioProjects = [
       { title: "Implemented video playback with controls" },
       { title: "Created CSS animations for a dynamic user experience" },
     ],
-    liveLink: "https://theme-responsive-website.vercel.app/",
+    liveLink: "https://landingpage.alenburovic.com/",
     githubLink: "https://github.com/BuliDev/theme-responsive-website",
     image: designDevelopImage,
   },
