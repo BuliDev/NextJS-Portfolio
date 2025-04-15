@@ -10,6 +10,10 @@ import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GitHubIcon from "@/assets/icons/github.svg";
+import TailwindCSSIcon from "@/assets/icons/tailwind-css.svg";
+import FigmaIcon from "@/assets/icons/figma.svg";
+import NodeJSIcon from "@/assets/icons/node-js.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { Cardheader } from "@/components/CardHeader";
@@ -35,12 +39,28 @@ const toolboxItems = [
     iconType: ReactIcon,
   },
   {
+    title: "Tailwind CSS",
+    iconType: TailwindCSSIcon,
+  },
+  {
     title: "Chrome",
     iconType: ChromeIcon,
   },
   {
     title: "GitHub",
     iconType: GitHubIcon,
+  },
+  {
+    title: "Figma",
+    iconType: FigmaIcon,
+  },
+  {
+    title: "Node.JS",
+    iconType: NodeJSIcon,
+  },
+  {
+    title: "MongoDB",
+    iconType: MongoDBIcon,
   },
 ];
 
